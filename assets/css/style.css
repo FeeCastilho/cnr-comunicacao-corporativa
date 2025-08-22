@@ -326,7 +326,7 @@ a:hover, a:focus {
   align-items: center;
   transition: transform var(--transition-fast);
   position: absolute;
-  left: var(--spacing-lg);
+  left: var(--spacing-xl);
   z-index: 1;
 }
 
@@ -352,7 +352,7 @@ a:hover, a:focus {
 
 .nav__link {
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--text-color);
   padding: var(--spacing-sm) var(--spacing-md);
   position: relative;
   transition: color var(--transition-fast);
@@ -361,8 +361,17 @@ a:hover, a:focus {
   letter-spacing: 0.5px;
 }
 
+.header.scrolled .nav__link {
+  color: var(--text-dark);
+}
+
 .nav__link:hover,
 .nav__link:focus {
+  color: var(--secondary-color);
+}
+
+.header.scrolled .nav__link:hover,
+.header.scrolled .nav__link:focus {
   color: var(--primary-color);
 }
 
